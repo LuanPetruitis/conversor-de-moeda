@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+
+</head>
+
+<body>
+    <div id="app">
+        <h1>Conversor de moedas</h1>
+        <div class="moedas">
+            <h3>Selecione qual moeda você deseja converter</h3>
+            <select name="moedaA" id="moedaA" onchange="mudarMoedaA()">
+                        <option value="" disabled selected>Converter</option>
+                        <option value="CAD">CAD</option>
+                        <option value="BRL">BRL</option>
+                        <option value="EUR">EUR</option>
+                        <option value="USD">USD</option>
+                        <option value="ARS">ARS</option>
+            </select>
+            <select name="moedaB" id="moedaB" onchange="mudarMoedaB()">
+                        <option value="" disabled selected>Convertida</option>
+                        <option value="CAD">CAD</option>
+                        <option value="BRL">BRL</option>
+                        <option value="EUR">EUR</option>
+                        <option value="USD">USD</option>
+                        <option value="ARS">ARS</option>
+            </select>
+            <h2 id="moedas"></h2>
+            <input type="number" name="valor" id="valor" placeholder="Digite o valor">
+            <input type="button" value="Converter" id="btn" onclick="converter()" />
+            <h2 id="convertida"></h2>
+        </div>
+        <script src="./scripts/script.js"></script>
+
+</body>
+
+</html>
